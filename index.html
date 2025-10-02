@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Biodata M. Hafiz Sutrisna</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd;
+    color: #004080;
+    margin: 0;
+    padding: 0 20px 40px 20px;
+  }
+
+  /* Kotak marquee atas */
+  .marquee-box {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 700px;
+    background: linear-gradient(90deg, #1976d2, #42a5f5);
+    color: white;
+    font-weight: 700;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    padding: 14px 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(25, 118, 210, 0.4);
+    z-index: 100;
+    white-space: nowrap;
+  }
+
+  .marquee-box span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 12s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+
+  /* Container utama biodata */
+  .container {
+    max-width: 700px;
+    margin: 100px auto 40px auto;
+    background: white;
+    border-radius: 16px;
+    padding: 30px 40px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    text-align: center;
+  }
+
+  img {
+    width: 220px;
+    border-radius: 14px;
+    box-shadow: 0 8px 16px rgba(25, 118, 210, 0.3);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  img:hover {
+    transform: scale(1.05);
+  }
+
+  h1 {
+    margin: 0 0 8px 0;
+    font-weight: 800;
+    font-size: 2.8rem;
+    color: #0d47a1;
+  }
+  p.subtitle {
+    margin: 0 0 30px 0;
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #1565c0;
+  }
+
+  .label {
+    font-weight: 700;
+    color: #1976d2;
+    font-size: 1.2rem;
+    margin-top: 28px;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  p.content {
+    text-align: left;
+    font-size: 1.1rem;
+    color: #0d47a1;
+    line-height: 1.6;
+    margin: 0 0 16px 0;
+  }
+
+  /* Social links area */
+  .social {
+    margin-top: 26px;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .social a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    background: linear-gradient(180deg, #fff, #f1f8ff);
+    border: 2px solid #1976d2;
+    color: #0d47a1;
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-weight: 700;
+    box-shadow: 0 6px 12px rgba(25,118,210,0.12);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .social a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 22px rgba(25,118,210,0.18);
+  }
+
+  .social small {
+    font-weight: normal;
+    color: #0d47a1;
+    font-size: 0.9rem;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+  <div class="marquee-box">
+    <span>Jalanin hidup dengan enjoy</span>
+  </div>
+
+  <div class="container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Mike_Tyson_2019.png" alt="Foto Mike Tyson" title="Foto Mike Tyson" />
+
+    <h1>M. Hafiz Sutrisna</h1>
+    <p class="subtitle">Padang, 12 Mei 2008</p>
+
+    <div>
+      <div class="label">Sekolah dan Kelas</div>
+      <p class="content">SMA Negeri 14 Pekanbaru - Kelas XI.2</p>
+    </div>
+
+    <div>
+      <div class="label">Hobi</div>
+      <p class="content">Gym, lari, voli, bulu tangkis, dan futsal.</p>
+      <p class="content">Saya sangat menikmati berbagai olahraga karena membantu menjaga kesehatan fisik dan mental. Gym membantu saya membentuk tubuh kuat dan percaya diri. Lari membuat pikiran segar dan fokus. Voley dan bulu tangkis melatih kerja sama tim dan strategi. Futsal melatih refleks dan kelincahan.</p>
+    </div>
+
+    <div>
+      <div class="label">Cita-cita</div>
+      <p class="content">Saya ingin menjadi operator pertambangan di PT. Freeport. Saya tertarik karena ingin berkontribusi membangun industri sumber daya alam yang berkelanjutan, menantang kemampuan teknis dan fisik, serta belajar teknologi canggih di lingkungan profesional.</p>
+    </div>
+
+    <!-- Social links -->
+    <div class="social" aria-label="Tautan sosial">
+      <a href="mailto:mhafizsutrisna@gmail.com" target="_blank" rel="noopener noreferrer" title="Kirim email ke Gmail">
+        <span class="icon">✉️</span>
+        Gmail
+        <small>(mhafizsutrisna@gmail.com)</small>
+      </a>
+
+      <a href="https://youtube.com/@mhafizsutrisna7871?si=z8x971V8Q_On3aIJ" target="_blank" rel="noopener noreferrer" title="Lihat channel YouTube saya">
+        <span class="icon">▶️</span>
+        YouTube
+        <small>(@mhafizsutrisna7871)</small>
+      </a>
+
+      <a href="https://www.instagram.com/hafizsutrisna_?igsh=cGZ2M2gyN2pkMGM=" target="_blank" rel="noopener noreferrer" title="Lihat Instagram saya">
+        <span class="icon">📷</span>
+        Instagram
+        <small>(@hafizsutrisna_)</small>
+      </a>
+    </div>
+  </div>
+
+</body>
+</html>
